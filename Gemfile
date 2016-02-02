@@ -35,6 +35,12 @@ end
 # Use Rails 12factor to serve assets in production more efficiently. Read more: https://github.com/heroku/rails_12factor
 gem 'rails_12factor', group: :production
 
+# Use Twitter Bootstrap-sass.
+gem 'bootstrap-sass', '~> 3.3.4.1'
+
+# Use Sprockets gem
+gem 'sprockets', '2.11.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
