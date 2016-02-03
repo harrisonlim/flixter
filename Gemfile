@@ -41,6 +41,9 @@ gem 'bootstrap-sass', '~> 3.3.4.1'
 # Use Sprockets gem
 gem 'sprockets', '2.11.0'
 
+# Use Devise gem for user authentication
+gem 'devise'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
