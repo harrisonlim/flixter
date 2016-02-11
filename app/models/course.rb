@@ -9,4 +9,12 @@ class Course < ActiveRecord::Base
 	validates :image, presence: true
 
 	mount_uploader :image, ImageUploader
+
+	def free?
+		cost.zero?
+	end
+
+	def premium?
+		! free?
+	end
 end
