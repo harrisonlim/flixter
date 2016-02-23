@@ -21,9 +21,9 @@ ActiveRecord::Schema.define(version: 20160212060317) do
     t.text     "description"
     t.decimal  "cost"
     t.integer  "user_id"
+    t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "image"
   end
 
   add_index "courses", ["user_id"], name: "index_courses_on_user_id", using: :btree
@@ -50,12 +50,6 @@ ActiveRecord::Schema.define(version: 20160212060317) do
 
   add_index "lessons", ["row_order"], name: "index_lessons_on_row_order", using: :btree
   add_index "lessons", ["section_id"], name: "index_lessons_on_section_id", using: :btree
-
-  create_table "photos", force: true do |t|
-    t.integer  "course_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "sections", force: true do |t|
     t.string   "title"
