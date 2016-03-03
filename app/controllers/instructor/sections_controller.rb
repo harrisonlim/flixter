@@ -33,6 +33,7 @@ class Instructor::SectionsController < ApplicationController
 
 	def current_section
 		@current_section ||= Section.find(params[:id])
+	end
 
 	helper_method :current_course
   	def current_course
